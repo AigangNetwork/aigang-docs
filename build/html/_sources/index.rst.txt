@@ -3,18 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Aigang's documentation!
-==================================
+Aigang (digital insurance protocol) documentation
+===================================================
+
+This documentation was written using reStructedText pattern. All concepts and syntax could be found `here`_.
+
+.. _here: http://www.sphinx-doc.org/en/stable/rest.html
+
+
+Contents
+========
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   :maxdepth: 4
+   
+   introduction/index.rst
+   examples/index.rst
