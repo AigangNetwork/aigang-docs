@@ -1,5 +1,10 @@
 What is Aigang?
 ===============
-Aigang aim to build a DAO Insurance Protocol on a blockchain which would enable community, companies,
-developers build insurance prediction markets and insurance products themselves, using our infrastructure.
-That’s how we see the future of blockchain insurance protocol.
+Our goal is to create fully automated insurance for IoT devices and a platform
+for insurance innovation built around data, predictions, investors and community
+
+To serve insurance to the end user we split our platform into 4 parts:
+- Data
+- Predictions market
+- Investment
+- Insure

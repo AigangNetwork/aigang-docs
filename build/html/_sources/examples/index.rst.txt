@@ -2,6 +2,10 @@ Documenation examples
 =====================
 Here lays are some examples for writing well-formated documentation
 
+This documentation was written using reStructedText pattern. All concepts and syntax could be found `here`_.
+
+.. _here: http://www.sphinx-doc.org/en/stable/rest.html
+
 Code
 ----
 This is a typical paragraph.  An indented literal block follows.
