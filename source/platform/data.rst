@@ -15,6 +15,11 @@ CSV requirements
 * comma separated
 * utf-8 encoding
 
+Remote file access point
+^^^^^^^^^^^^^^^^
+This field is for describing detailed steps how platform users will be able to access data file and download it.
+Usually it is set when provided file is too large or contains other extension than .csv
+
 
 Data set visibility can be:
 
