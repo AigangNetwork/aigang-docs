@@ -24,10 +24,10 @@ Usually it is set when provided file is too large or contains other extension th
 Data set state:
 ^^^^^^^^^^^^^^^^
 
-* Waiting for approval - data set is currently under review by administrators .. image:: ../img/waitingForApproval.png
-* Public - data set is visible for all platform visitors .. image:: ../img/publicAvailibe.png
-* Private - data set is visible for registered users only .. image:: ../img/publicAvailibe.png
-* Closed - data set is no longer relevant. No edit or new models submission allowed .. image:: ../img/closed.png
+* Waiting for approval - data set is currently under review by administrators
+* Public - data set is visible for all platform visitors
+* Private - data set is visible for registered users only
+* Closed - data set is no longer relevant. No edit or new models submission allowed
 
 Data set example
 ^^^^^^^^^^^^^^^^
