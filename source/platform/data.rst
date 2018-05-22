@@ -21,10 +21,13 @@ This field is for describing detailed steps how platform users will be able to a
 Usually it is set when provided file is too large or contains other extension than .csv
 
 
-Data set visibility can be:
+Data set state:
+^^^^^^^^^^^^^^^^
 
-* Public - visible for all user.
-* Only for logged-in - for logged-in users only.
+* .. image:: ../img/waitingForApproval.png Waiting for approval - data set is currently under review by administrators.
+* .. image:: ../img/publicAvailibe.png Public - data set is visible for all platform visitors.
+* .. image:: ../img/publicAvailibe.png Private - data set is visible for registered users only.
+* .. image:: ../img/closed.png Closed - data set is no longer relevant. No edit or new models submission allowed.
 
 Data set example
 ^^^^^^^^^^^^^^^^
