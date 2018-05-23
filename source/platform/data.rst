@@ -21,12 +21,12 @@ This field is for describing detailed steps how platform users will be able to a
 Usually it is set when provided file is too large or contains other extension than .csv
 
 
-Data set state:
+Data set state
 ^^^^^^^^^^^^^^^^
 
 * Waiting for approval - data set is currently under review by administrators
 * Public - data set is visible for all platform visitors
-* Private - data set is visible for registered users only
+* For logged in users - data set is visible for For logged in users only
 * Closed - data set is no longer relevant. No edit or new models submission allowed
 
 Data set example
