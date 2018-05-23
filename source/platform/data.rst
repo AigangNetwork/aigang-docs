@@ -26,7 +26,7 @@ Data set state
 
 * Waiting for approval - data set is currently under review by administrators
 * Public - data set is visible for all platform visitors
-* For logged in users - data set is visible for For logged in users only
+* For logged in users - data set is visible for logged in users only
 * Closed - data set is no longer relevant. No edit or new models submission allowed
 
 Data set example
