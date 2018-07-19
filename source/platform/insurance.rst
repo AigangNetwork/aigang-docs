@@ -15,7 +15,7 @@ Each user can calculate specific premium for their device by following these ste
 2. Open the app and pair your device with the Aigang Platform.
 3. In the Aigang Platform, press the button "Calculate Premium" button and enter your device ID.
 
-After that data from your device will be collected and sent to the premium calculator smart contract.
+Data from your device will be collected and sent to the premium calculator smart contract.
 Premium calculator will validate the data and calculate the premium based on your device's data.
 
 Insuring your device
@@ -32,5 +32,5 @@ Insurance Product Smart Contract
 ^^^^^^^^^^^^^^^^
 All policies are stored in insurance product smart contract. 
 Your policy ID is the key to getting your policy data from the smart contract.
-Policy ID should not be revealed to any third party at all times.
+Policy ID should not be revealed to any third party.
 
