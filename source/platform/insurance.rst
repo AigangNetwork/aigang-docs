@@ -30,7 +30,7 @@ will be insured.
 
 Insurance Product Smart Contract
 ^^^^^^^^^^^^^^^^
-All policies are save in insurance product smart contract. 
-You policy ID is your key to getting your policy data from the smart contract, so you should not reveal 
-it to any other parties.
+All policies are stored in insurance product smart contract. 
+Your policy ID is the key to getting your policy data from the smart contract.
+Policy ID should not be revealed to any third party at all times.
 
