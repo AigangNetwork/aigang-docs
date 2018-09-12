@@ -9,7 +9,7 @@ To serve insurance to the end user we split our platform into 4 main parts:
 * :doc:`data`
 * :doc:`predictions`
 * :doc:`investments`
-* :doc:`insurance`
+* :doc:`insurance/insurance`
 
 
 In short

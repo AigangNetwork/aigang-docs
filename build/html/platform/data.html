@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data &mdash; Aigang 2018-01-01 documentation</title>
+  <title>Data &mdash; Aigang 2018-09-14 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="Aigang 2018-01-01 documentation" href="../index.html"/>
+    <link rel="top" title="Aigang 2018-09-14 documentation" href="../index.html"/>
         <link rel="next" title="Predictions Market" href="predictions.html"/>
         <link rel="prev" title="What is Aigang?" href="index.html"/> 
 
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                2018-01-01
+                2018-09-14
               </div>
             
           
@@ -95,6 +95,8 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#data-set">Data set</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#csv-requirements">CSV requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remote-file-access-point">Remote file access point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-set-state">Data set state</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#data-set-example">Data set example</a></li>
 </ul>
 </li>
@@ -106,7 +108,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="predictions.html">Predictions Market</a></li>
 <li class="toctree-l1"><a class="reference internal" href="investments.html">Investments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="insurance.html">Insurance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="insurance/insurance.html">Insurance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Documenation examples</a></li>
 </ul>
 
@@ -186,10 +188,19 @@ File format should fit CSV standard “TODO: here”.</p>
 <li>comma separated</li>
 <li>utf-8 encoding</li>
 </ul>
-<p>Data set visibility can be:</p>
+</div>
+<div class="section" id="remote-file-access-point">
+<h3>Remote file access point<a class="headerlink" href="#remote-file-access-point" title="Permalink to this headline">¶</a></h3>
+<p>This field is for describing detailed steps how platform users will be able to access data file and download it.
+Usually it is set when provided file is too large or contains other extension than .csv</p>
+</div>
+<div class="section" id="data-set-state">
+<h3>Data set state<a class="headerlink" href="#data-set-state" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>Public - visible for all user.</li>
-<li>Only for logged-in - for logged-in users only.</li>
+<li>Waiting for approval - data set is currently under review by administrators</li>
+<li>Public - data set is visible for all platform visitors</li>
+<li>For logged in users - data set is visible for logged in users only</li>
+<li>Closed - data set is no longer relevant. No edit or new models submission allowed</li>
 </ul>
 </div>
 <div class="section" id="data-set-example">
@@ -318,7 +329,7 @@ For more precise models user can create up to 10 risk tables.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2018-01-01',
+            VERSION:'2018-09-14',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

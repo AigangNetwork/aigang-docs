@@ -6,7 +6,7 @@ Aigang Platform documentation
 
 
 
-Contents
+Content
 ========
 
 .. toctree::
@@ -16,5 +16,5 @@ Contents
    platform/data.rst
    platform/predictions.rst
    platform/investments.rst
-   platform/insurance.rst
+   platform/insurance/insurance.rst
    examples/index.rst

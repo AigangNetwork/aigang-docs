@@ -1,0 +1,293 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Insurance structure &mdash; Aigang 2018-09-14 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Aigang 2018-09-14 documentation" href="../../index.html"/>
+        <link rel="up" title="Insurance" href="insurance.html"/>
+        <link rel="next" title="Android Battery Insurance Product" href="batteryInsuranceProduct.html"/>
+        <link rel="prev" title="Insurance" href="insurance.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Aigang
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2018-09-14
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">What is Aigang?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data.html">Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../predictions.html">Predictions Market</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../investments.html">Investments</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="insurance.html">Insurance</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="insurance.html#successful-insurance-flow">Successful insurance flow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insurance.html#successful-claim-flow">Successful claim flow</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="insurance.html#more-details">More details</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Insurance structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#blockchain-part">Blockchain Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#platform-part">Platform Part</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="batteryInsuranceProduct.html">Android Battery Insurance Product</a></li>
+<li class="toctree-l3"><a class="reference internal" href="links.html">Links</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Documenation examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Aigang</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="insurance.html">Insurance</a> &raquo;</li>
+        
+      <li>Insurance structure</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/platform/insurance/architecture.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="insurance-structure">
+<h1>Insurance structure<a class="headerlink" href="#insurance-structure" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="blockchain-part">
+<h2>Blockchain Part<a class="headerlink" href="#blockchain-part" title="Permalink to this headline">¶</a></h2>
+<img alt="../../_images/insuranceBlockchain.png" src="../../_images/insuranceBlockchain.png" />
+<p>The main contract will be <strong>Product</strong> contract which holds all insurance product properties, balance, list of policies and reference to the Premium calculator contract.</p>
+<p><strong>Policies</strong> contain all audit-able details about policy evaluation dates, premium, payout size, device details on policy writing date and all details about the payout.</p>
+<p><strong>Premium Calculator</strong> contract will hold a risk model with calculation formulas, base premium, fees and claim validation rules.</p>
+</div>
+<div class="section" id="platform-part">
+<h2>Platform Part<a class="headerlink" href="#platform-part" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="platform-api">
+<h3>Platform API:<a class="headerlink" href="#platform-api" title="Permalink to this headline">¶</a></h3>
+<p>REST api service for other applications. Users can use to integrate with the platform. Addresses can be found at developers wiki page <a class="reference external" href="https://aigangnetwork.github.io/">https://aigangnetwork.github.io/</a></p>
+</div>
+<div class="section" id="platform-web">
+<h3>Platform WEB:<a class="headerlink" href="#platform-web" title="Permalink to this headline">¶</a></h3>
+<p>Aigang team maintainable web interface working on top of REST API.</p>
+</div>
+<div class="section" id="background-services">
+<h3>Background services:<a class="headerlink" href="#background-services" title="Permalink to this headline">¶</a></h3>
+<p><strong>Aigang.Policies.Listener</strong> service - helps to maintain policies. One of jobs example is - old draft poliecies are moved to status “Canceled” and finished to status “Finished”.</p>
+<p><strong>Aigang.Transactions.Listener</strong> service - helps to maintain blockchain transactions statuses. Example: when insurance product receives new policy payment transaction this service activate policy and submit it to the Blockchain.</p>
+</div>
+<div class="section" id="general-policy-statuses">
+<h3>General policy statuses:<a class="headerlink" href="#general-policy-statuses" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Draft</strong> - initial policy status.</li>
+<li><strong>PendingPayment</strong> - policy payment was initialized.</li>
+<li><strong>Paid</strong> - payment was received and policy is active.</li>
+<li><strong>Finished</strong> - policy is ended.</li>
+<li><strong>Claimable</strong> - device was broken and user can take payout.</li>
+<li><strong>PendingPayout</strong> - payout is initialized.</li>
+<li><strong>Paidout</strong> - policy is ended and payout is send.</li>
+<li><strong>Canceled</strong> - for some reasons policy is canceled.</li>
+</ul>
+<img alt="../../_images/policyStatuses.png" src="../../_images/policyStatuses.png" />
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="batteryInsuranceProduct.html" class="btn btn-neutral float-right" title="Android Battery Insurance Product" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="insurance.html" class="btn btn-neutral" title="Insurance" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Aigang.network.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'2018-09-14',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

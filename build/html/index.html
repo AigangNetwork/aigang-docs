@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Aigang Platform documentation &mdash; Aigang 2018-01-01 documentation</title>
+  <title>Aigang Platform documentation &mdash; Aigang 2018-09-14 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Aigang 2018-01-01 documentation" href="#"/>
+    <link rel="top" title="Aigang 2018-09-14 documentation" href="#"/>
         <link rel="next" title="What is Aigang?" href="platform/index.html"/> 
 
   
@@ -65,7 +65,7 @@
             
             
               <div class="version">
-                2018-01-01
+                2018-09-14
               </div>
             
           
@@ -94,7 +94,7 @@
 <li class="toctree-l1"><a class="reference internal" href="platform/data.html">Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="platform/predictions.html">Predictions Market</a></li>
 <li class="toctree-l1"><a class="reference internal" href="platform/investments.html">Investments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="platform/insurance.html">Insurance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platform/insurance/insurance.html">Insurance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/index.html">Documenation examples</a></li>
 </ul>
 
@@ -162,8 +162,8 @@
   <div class="section" id="aigang-platform-documentation">
 <h1>Aigang Platform documentation<a class="headerlink" href="#aigang-platform-documentation" title="Permalink to this headline">¶</a></h1>
 </div>
-<div class="section" id="contents">
-<h1>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="content">
+<h1>Content<a class="headerlink" href="#content" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="platform/index.html">What is Aigang?</a><ul>
@@ -174,6 +174,8 @@
 <li class="toctree-l1"><a class="reference internal" href="platform/data.html">Data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="platform/data.html#data-set">Data set</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="platform/data.html#csv-requirements">CSV requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="platform/data.html#remote-file-access-point">Remote file access point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="platform/data.html#data-set-state">Data set state</a></li>
 <li class="toctree-l3"><a class="reference internal" href="platform/data.html#data-set-example">Data set example</a></li>
 </ul>
 </li>
@@ -191,8 +193,24 @@
 <li class="toctree-l2"><a class="reference internal" href="platform/investments.html#todo">TODO</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="platform/insurance.html">Insurance</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="platform/insurance.html#todo">TODO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platform/insurance/insurance.html">Insurance</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="platform/insurance/insurance.html#successful-insurance-flow">Successful insurance flow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="platform/insurance/insurance.html#successful-claim-flow">Successful claim flow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="platform/insurance/insurance.html#more-details">More details</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="platform/insurance/architecture.html">Insurance structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="platform/insurance/architecture.html#blockchain-part">Blockchain Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="platform/insurance/architecture.html#platform-part">Platform Part</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="platform/insurance/batteryInsuranceProduct.html">Android Battery Insurance Product</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="platform/insurance/batteryInsuranceProduct.html#calculating-premium">Calculating Premium</a></li>
+<li class="toctree-l4"><a class="reference internal" href="platform/insurance/batteryInsuranceProduct.html#insuring-your-device">Insuring your device</a></li>
+<li class="toctree-l4"><a class="reference internal" href="platform/insurance/batteryInsuranceProduct.html#insurance-product-smart-contract">Insurance Product Smart Contract</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="platform/insurance/links.html">Links</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="examples/index.html">Documenation examples</a><ul>
@@ -201,6 +219,13 @@
 <li class="toctree-l2"><a class="reference internal" href="examples/index.html#images">Images</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples/index.html#hyperlinks">Hyperlinks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples/index.html#lists-and-emphasis">Lists and emphasis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/index.html#test-paragraph">test Paragraph</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="examples/index.html#test1">Test1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/index.html#test2">Test2</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -249,7 +274,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'2018-01-01',
+            VERSION:'2018-09-14',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
