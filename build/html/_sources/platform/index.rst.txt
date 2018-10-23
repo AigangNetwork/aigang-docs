@@ -7,8 +7,8 @@ for insurance innovation built around data, predictions, investors and community
 To serve insurance to the end user we split our platform into 4 main parts:
 
 * :doc:`data`
-* :doc:`predictions`
-* :doc:`investments`
+* :doc:`predictions/predictions`
+* :doc:`pools`
 * :doc:`insurance/insurance`
 
 
@@ -23,10 +23,10 @@ Platform goal is to create balanced Insurance products using this steps:
 After these steps insurance product will be created. For this kind and for first time insurance product should be created manualy. In creation proces should be created product oracle for claims validations.  
 After product creation these steps continues: 
 
-* **Investment** - allows investors to invest into insurance product reserves pool.
+* **Pool** - allows to paricipate into insurance product reserves pool.
 * **Insurance** - in this step insurance product is ready for users to start insure they devices.
 
-Insurance product will have life cycles where in the end all left reserves will be distributed for investors.
+Insurance product will have life cycles which at the end all left reserves will be distributed for reserve pool participants.
 
 Links
 ------

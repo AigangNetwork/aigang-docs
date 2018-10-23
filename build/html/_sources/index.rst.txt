@@ -14,7 +14,7 @@ Content
    
    platform/index.rst
    platform/data.rst
-   platform/predictions.rst
-   platform/investments.rst
+   platform/predictions/predictions.rst
+   platform/pools.rst
    platform/insurance/insurance.rst
    examples/index.rst

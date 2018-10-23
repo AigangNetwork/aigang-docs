@@ -1,0 +1,404 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Prediction Market structure &mdash; Aigang 2018-09-14 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Aigang 2018-09-14 documentation" href="../../index.html"/>
+        <link rel="up" title="Predictions Market" href="predictions.html"/>
+        <link rel="next" title="Links" href="links.html"/>
+        <link rel="prev" title="Predictions Market" href="predictions.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Aigang
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2018-09-14
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">What is Aigang?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data.html">Data</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="predictions.html">Predictions Market</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="predictions.html#domain-language">Domain language:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="predictions.html#successful-forecast-flow">Successful forecast flow</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="predictions.html#more-details">More details</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Prediction Market structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#blockchain-part">Blockchain Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#platform-part">Platform Part</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="links.html">Links</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pools.html">Pools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../insurance/insurance.html">Insurance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Documenation examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Aigang</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="predictions.html">Predictions Market</a> &raquo;</li>
+        
+      <li>Prediction Market structure</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/platform/predictions/architecture.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="prediction-market-structure">
+<h1>Prediction Market structure<a class="headerlink" href="#prediction-market-structure" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="blockchain-part">
+<h2>Blockchain Part<a class="headerlink" href="#blockchain-part" title="Permalink to this headline">¶</a></h2>
+<p>Full view:</p>
+<img alt="../../_images/predictionMarketContracts.png" src="../../_images/predictionMarketContracts.png" />
+<div class="section" id="market-contract">
+<h3>Market Contract<a class="headerlink" href="#market-contract" title="Permalink to this headline">¶</a></h3>
+<p>The main contract will be <strong>Market</strong> contract which holds:</p>
+<ul class="simple">
+<li>AIX Balance of all predictions</li>
+<li>All actions Events</li>
+<li>Available predictions list</li>
+<li>Participants forecasts details</li>
+</ul>
+<p><strong>Prediction</strong></p>
+<p>The entity holds all participants forecasts and addresses to ResultStorage, PrizeCalculator. Full Entity structure:</p>
+<ul class="simple">
+<li>id - 32 symbols hash</li>
+<li>forecastStartUtc - Start date when Prediction starts to accept forecasts.</li>
+<li>forecastEndUtc - End date until which prediction accept forecasts</li>
+<li>fee - Each prediction can have a fee.</li>
+<li>status -<ul>
+<li>NotSet (0)</li>
+<li>Published (1) - prediction is ready for market. Initial status.</li>
+<li>Resolved (2) - prediction winning outcome is known and payouts are ready.</li>
+<li>Paused (3) - participation in this predictions is paused and administrators are investigating what is happening</li>
+<li>Canceled (4) - some issue happened and refunds for this prediction participants will happen.</li>
+</ul>
+</li>
+<li>outcomesCount - number how much outcomes are available</li>
+<li>resultOutcome - outcome index which won prediction. Start from 1.</li>
+<li>forecasts - an array of participants forecasts:<ul>
+<li>id - 32 symbols hash</li>
+<li>user - forecast owner wallet address</li>
+<li>amount - forecast size in AIX tokens</li>
+<li>outcomeId - forecast selected outcome index</li>
+<li>paidout - if the prediction is canceled or forecast won - an amount which was paid for user</li>
+</ul>
+</li>
+<li>outcomeTokens - array with information how much tokens has each outcome index</li>
+<li>initialTokens - a number of tokens which was transferred by an organizer</li>
+<li>totalTokens - prediction tokens amount</li>
+<li>totalForecasts - forecasts participated in this prediction count</li>
+<li>totalTokensPaidout - total tokens paid out after resolving</li>
+<li>resultStorage - result oracle contract address</li>
+<li>prizeCalculator - prize calculator formula contract address</li>
+</ul>
+<p><strong>Market functions</strong></p>
+<ul class="simple">
+<li><strong>initialize</strong> - market owner setup market</li>
+<li><strong>addPrediction</strong> - owner can add prediction and update in case of issue</li>
+<li><strong>changePredictionStatus</strong> - [emergency function] owner can pause prediction when something wrong happened</li>
+<li><strong>resolve</strong> - prediction resolving function will be called after oracle knows prediction winning outcome id.</li>
+<li><strong>payout</strong> - function dedicated for winning payouts to take theyr rewards</li>
+<li><strong>refundUser</strong> - [emergency function] - owner can refund forecast to owner in case of issue.</li>
+<li><strong>refund</strong> - if prediction was canseled users using this function will get refund.</li>
+<li><strong>receiveApproval</strong> - AIX token will call this function to setup user forecast</li>
+</ul>
+<p>View functions are used, because of current solidity limitations</p>
+<ul class="simple">
+<li><strong>getForecast</strong> - ability to read forecast details</li>
+<li><strong>getOutcomeTokens</strong> -  ability to know each outcome collected money</li>
+</ul>
+<p>Safety functions</p>
+<ul class="simple">
+<li><strong>withdrawETH</strong> - withdraw all ethers in case something wrong will be found</li>
+<li><strong>withdrawTokens</strong> - withdraw all tokens in case something wrong will be found</li>
+<li><strong>pause</strong> - pause market in case something wrong will be found</li>
+</ul>
+</div>
+<div class="section" id="prize-calculator-contract">
+<h3>Prize calculator contract<a class="headerlink" href="#prize-calculator-contract" title="Permalink to this headline">¶</a></h3>
+<p>This contract stores formula how much participant can withdraw when his selected output wins.</p>
+<p>Function to calculate win amount:</p>
+<ul class="simple">
+<li><strong>calculatePrizeAmount</strong></li>
+</ul>
+<p>At first version we use simples prize distribution formula:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Your</span> <span class="n">contributed</span> <span class="n">tokens</span> <span class="p">(</span><span class="n">_forecastTokens</span><span class="p">)</span> <span class="o">*</span> <span class="n">_predictionTotalTokens</span> <span class="o">/</span> <span class="n">_winOutputTotalTokens</span> <span class="o">=</span> <span class="n">prize</span>
+
+<span class="n">Example</span><span class="p">:</span>
+
+<span class="n">A</span> <span class="n">prediction</span> <span class="n">has</span> <span class="mi">2</span> <span class="n">different</span> <span class="n">outcomes</span> <span class="p">(</span><span class="n">Outcome</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Outcome</span> <span class="mi">2</span><span class="p">)</span> <span class="ow">and</span> <span class="n">initial</span> <span class="mi">2000</span> <span class="n">tokens</span> <span class="n">prize</span><span class="p">:</span>
+
+<span class="n">User</span> <span class="n">A</span> <span class="n">placed</span> <span class="mi">100</span> <span class="n">tokens</span> <span class="n">on</span> <span class="n">Outcome</span> <span class="mi">1</span>
+<span class="n">User</span> <span class="n">B</span> <span class="n">placed</span> <span class="mi">300</span> <span class="n">tokens</span> <span class="n">on</span> <span class="n">Outcome</span> <span class="mi">1</span>
+<span class="n">User</span> <span class="n">C</span> <span class="n">placed</span> <span class="mi">100</span> <span class="n">tokens</span> <span class="n">on</span> <span class="n">Outcome</span> <span class="mi">2</span>
+<span class="n">Total</span> <span class="n">contributed</span> <span class="n">tokens</span><span class="p">:</span> <span class="mi">2500</span>
+
+<span class="n">After</span> <span class="n">the</span> <span class="n">prediction</span> <span class="n">resolves</span><span class="p">,</span> <span class="n">the</span> <span class="n">Oracle</span> <span class="n">decides</span> <span class="n">the</span> <span class="n">winning</span> <span class="n">outcome</span> <span class="ow">is</span> <span class="n">Outcome</span> <span class="mf">1.</span>
+<span class="n">Users</span> <span class="n">can</span> <span class="n">now</span> <span class="n">withdraw</span> <span class="n">the</span> <span class="n">following</span> <span class="n">token</span> <span class="n">amount</span> <span class="kn">from</span> <span class="nn">their</span> <span class="n">forecasts</span><span class="p">:</span>
+
+<span class="n">User</span> <span class="n">A</span> <span class="o">-&gt;</span> <span class="mi">100</span> <span class="o">*</span> <span class="mi">2500</span> <span class="o">/</span> <span class="p">(</span><span class="mi">100</span> <span class="o">+</span> <span class="mi">300</span><span class="p">)</span> <span class="o">=</span> <span class="mi">625</span> <span class="n">Tokens</span>
+<span class="n">User</span> <span class="n">B</span> <span class="o">-&gt;</span> <span class="mi">300</span> <span class="o">*</span> <span class="mi">2500</span> <span class="o">/</span> <span class="p">(</span><span class="mi">100</span> <span class="o">+</span> <span class="mi">300</span><span class="p">)</span> <span class="o">=</span> <span class="mi">1875</span> <span class="n">Tokens</span>
+<span class="n">User</span> <span class="n">C</span> <span class="o">-&gt;</span> <span class="mi">0</span> <span class="n">tokens</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="result-storage-contract">
+<h3>Result Storage contract<a class="headerlink" href="#result-storage-contract" title="Permalink to this headline">¶</a></h3>
+<p>This contract store all predictions resolutions. The contract will be connected with our oracle service which will solve predictions.
+At this moment 3rd party services like <a class="reference external" href="http://www.oraclize.it/">http://www.oraclize.it/</a> are not stable, have limited support, expensive and execution
+flow is not traceable. When we allow users to create predictions by themselves this part becomes extremely complex and we think that this
+functionality is a key feature. Having own oracle service will be much flexible solution and in the future, this solution can act as a proxy to better 3rd party oracles.</p>
+</div>
+</div>
+<div class="section" id="platform-part">
+<h2>Platform Part<a class="headerlink" href="#platform-part" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="platform-api">
+<h3>Platform API:<a class="headerlink" href="#platform-api" title="Permalink to this headline">¶</a></h3>
+<p>REST api service for other applications. Users can use to integrate with the platform. Addresses can be found at developers wiki page <a class="reference external" href="https://aigangnetwork.github.io/">https://aigangnetwork.github.io/</a></p>
+</div>
+<div class="section" id="platform-web">
+<h3>Platform WEB:<a class="headerlink" href="#platform-web" title="Permalink to this headline">¶</a></h3>
+<p>Aigang team maintainable web interface working on top of REST API.</p>
+</div>
+<div class="section" id="background-services">
+<h3>Background services:<a class="headerlink" href="#background-services" title="Permalink to this headline">¶</a></h3>
+<p><strong>Aigang.Predictions.Listener</strong> service - helps to maintain prediction statuses. One of jobs example is - older than 24 hourse draft forecasts  will be deleted.</p>
+<p><strong>Aigang.Transactions.Listener</strong> service - helps to maintain blockchain transactions statuses. Example: when forecast receives payment transaction this service activate forecast and update status to “Paid”.</p>
+</div>
+<div class="section" id="general-prediction-statuses-in-platform">
+<h3>General prediction statuses in platform:<a class="headerlink" href="#general-prediction-statuses-in-platform" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>PendingPublish (6)</strong> - Prediction is created and waiting for activation.</li>
+<li><strong>Published (1)</strong> - prediction is ready for market. Initial status.</li>
+<li><strong>PendingResolve (5)</strong> - Forecasting is ended and waiting for resolving.</li>
+<li><strong>Resolved (2)</strong> - the prediction winning outcome is known and payouts are ready.</li>
+<li><strong>Paused (3)</strong> - participation in this predictions is paused and administrators are investigating what is happening</li>
+<li><strong>Canceled (4)</strong> - some issue happened and refunds for this prediction participants will happen.</li>
+</ul>
+<img alt="../../_images/predictionStatus.png" src="../../_images/predictionStatus.png" />
+</div>
+<div class="section" id="general-forecast-statuses-in-platform">
+<h3>General forecast statuses in platform:<a class="headerlink" href="#general-forecast-statuses-in-platform" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Draft (1)</strong> - initial forecast status.</li>
+<li><strong>PendingPayment (2)</strong> - forecast payment was initialized.</li>
+<li><strong>Paid (3)</strong> - payment was received and forecast is active.</li>
+<li><strong>Canceled (4)</strong> - forecast is ended.</li>
+<li><strong>Won (5)</strong> - forecast output index was actual event.</li>
+<li><strong>Lost (6)</strong> - forecast lost.</li>
+<li><strong>WonPaidout (7)</strong> - forecast is ended and payout is sent.</li>
+<li><strong>AvailableRefund (8)</strong> - prediction is canceled and you can refund your tokens.</li>
+<li><strong>PendingPayout (9)</strong> - payout transactions was submited and platform is waiting until it will be commited.</li>
+<li><strong>RefundPaidout (10)</strong> - refund was successful and tokens was sent to user.</li>
+</ul>
+<img alt="../../_images/forecastStatus.png" src="../../_images/forecastStatus.png" />
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="links.html" class="btn btn-neutral float-right" title="Links" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="predictions.html" class="btn btn-neutral" title="Predictions Market" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Aigang.network.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'2018-09-14',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
