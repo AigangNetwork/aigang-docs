@@ -1,9 +1,11 @@
 # aigang-docs
 Aigang project documentation  
 
-Setup:  
-- npm install  
-- pip install sphinx_rtd_theme  
+Setup:
+- sudo easy_install pip
+- sudo easy_install nose
+- sudo easy_install tornado
+- sudo pip install sphinx_rtd_theme  
 
 Build:  
 - make html

@@ -1,10 +1,5 @@
-.. Aigang documentation master file, created by
-   sphinx-quickstart on Tue Jan  9 11:42:21 2018.
-
 Aigang Platform documentation
 =============================
-
-
 
 Content
 ========
@@ -17,4 +12,5 @@ Content
    platform/predictions/predictions.rst
    platform/pools.rst
    platform/insurance/insurance.rst
+   platform/bugBounty.rst
    examples/index.rst

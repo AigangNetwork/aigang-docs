@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data &mdash; Aigang 2018-09-14 documentation</title>
+  <title>Data &mdash; Aigang 2018-11-06 documentation</title>
   
 
   
@@ -24,27 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="Aigang 2018-09-14 documentation" href="../index.html"/>
-        <link rel="next" title="Predictions Market" href="predictions.html"/>
-        <link rel="prev" title="What is Aigang?" href="index.html"/> 
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Predictions Market" href="predictions/predictions.html" />
+    <link rel="prev" title="What is Aigang?" href="index.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -66,7 +58,7 @@
             
             
               <div class="version">
-                2018-09-14
+                2018-11-06
               </div>
             
           
@@ -106,9 +98,10 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="predictions.html">Predictions Market</a></li>
-<li class="toctree-l1"><a class="reference internal" href="investments.html">Investments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="predictions/predictions.html">Predictions Market</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pools.html">Pools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="insurance/insurance.html">Insurance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugBounty.html">Bug bounty</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Documenation examples</a></li>
 </ul>
 
@@ -121,7 +114,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Aigang</a>
@@ -129,9 +122,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -205,7 +199,7 @@ Usually it is set when provided file is too large or contains other extension th
 </div>
 <div class="section" id="data-set-example">
 <h3>Data set example<a class="headerlink" href="#data-set-example" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;DATE&quot;</span><span class="p">,</span><span class="s2">&quot;REGION&quot;</span><span class="p">,</span><span class="s2">&quot;DEVICEBRAND&quot;</span><span class="p">,</span><span class="s2">&quot;DEVICEYEAR&quot;</span><span class="p">,</span><span class="s2">&quot;BATTERYWEARLEVEL&quot;</span><span class="p">,</span><span class="s2">&quot;ITEMID&quot;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;DATE&quot;</span><span class="p">,</span><span class="s2">&quot;REGION&quot;</span><span class="p">,</span><span class="s2">&quot;DEVICEBRAND&quot;</span><span class="p">,</span><span class="s2">&quot;DEVICEYEAR&quot;</span><span class="p">,</span><span class="s2">&quot;BATTERYWEARLEVEL&quot;</span><span class="p">,</span><span class="s2">&quot;ITEMID&quot;</span>
 <span class="s2">&quot;2017-09-21 16:29:50&quot;</span><span class="p">,</span><span class="s2">&quot;unknown&quot;</span><span class="p">,</span><span class="s2">&quot;asus&quot;</span><span class="p">,</span><span class="s2">&quot;2016&quot;</span><span class="p">,</span><span class="s2">&quot;100&quot;</span><span class="p">,</span><span class="s2">&quot;bf2405968e460a53&quot;</span>
 <span class="s2">&quot;2017-09-22 9:35:15&quot;</span><span class="p">,</span><span class="s2">&quot;unknown&quot;</span><span class="p">,</span><span class="s2">&quot;meizu&quot;</span><span class="p">,</span><span class="s2">&quot;2017&quot;</span><span class="p">,</span><span class="s2">&quot;90&quot;</span><span class="p">,</span><span class="s2">&quot;1002215a3478a570&quot;</span>
 <span class="s2">&quot;2017-09-22 20:36:15&quot;</span><span class="p">,</span><span class="s2">&quot;unknown&quot;</span><span class="p">,</span><span class="s2">&quot;pantech&quot;</span><span class="p">,</span><span class="s2">&quot;2014&quot;</span><span class="p">,</span><span class="s2">&quot;90&quot;</span><span class="p">,</span><span class="s2">&quot;93e2b97de177ed99&quot;</span>
@@ -287,15 +281,13 @@ For more precise models user can create up to 10 risk tables.</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="predictions.html" class="btn btn-neutral float-right" title="Predictions Market" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="predictions/predictions.html" class="btn btn-neutral float-right" title="Predictions Market" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral" title="What is Aigang?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -307,11 +299,11 @@ For more precise models user can create up to 10 risk tables.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Aigang.network.
+        &copy; Copyright 2018, Aigang.network
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -326,35 +318,24 @@ For more precise models user can create up to 10 risk tables.</p>
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'2018-09-14',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

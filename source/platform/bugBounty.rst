@@ -1,0 +1,95 @@
+Bug bounty
+=================
+This section contains documentation how to set up environment for bug bounty testing.
+
+.. attention::
+   Aigang android insurance product only allows to use real android devices with SIM card(s).
+
+Install test app for Android device
+-----------------------------------
+
+**Step 1**
+
+- From your android device navigate to https://github.com/AigangNetwork/aigang-insurance-app/tree/master/android 
+
+- If there is more than one APK version, choose latest one.
+
+**Step 2**
+
+- Switch your mobile browser mode to view desktop mode. It allows you to see Download button.
+
+.. image:: ../img/setUpAndroidApp/step1.png 
+   :width: 400px
+   :align: center
+
+**Step 3**
+
+- Click `Download` button and download APK.
+
+.. image:: ../img/setUpAndroidApp/step2.png 
+   :width: 400px
+   :align: center
+
+.. image:: ../img/setUpAndroidApp/step3.png 
+   :width: 400px
+   :align: center
+
+**Step 4**
+
+- Install and open app.
+
+.. image:: ../img/setUpAndroidApp/step4.png 
+   :width: 400px
+   :align: center
+
+**Step 5**
+
+- Agree with permission request.
+
+.. image:: ../img/setUpAndroidApp/step5.png 
+   :width: 400px
+   :align: center
+
+**Step 6**
+
+- Grant telephony permission for aigang app. Application needs this permission to get SIM card related data.
+
+.. image:: ../img/setUpAndroidApp/step6.png 
+   :width: 400px
+   :align: center
+
+**Step 7**
+
+- Pair your device with test platform.
+
+.. image:: ../img/setUpAndroidApp/step7.png 
+   :width: 400px
+   :align: center
+
+**Step 8**
+
+- Congratulations, you successfully paired your device.
+
+.. image:: ../img/setUpAndroidApp/step8.png 
+   :width: 400px
+   :align: center
+
+
+Android application Mock data
+-----------------------------------
+TODO: Add description about mock data functionality
+
+White list
+-----------------------------------
+To get more functionality for easier testing whitelist your device ID: https://github.com/AigangNetwork/aigang-platform-web/issues/86 
+
+Create test account
+-----------------------------------
+- Open https://testplatform.aigang.network/register and sign up.
+- Active your test account by clicking link in registration email.
+
+Generate test AIX tokens
+-----------------------------------
+- Connect to your wallet client (e.x Metamask)
+- Navigate to https://aigangnetwork.github.io/testaix/
+- Click `Generate tokens for me`
