@@ -53,21 +53,22 @@ The entity holds all participants forecasts and addresses to ResultStorage, Priz
 
 **Market functions**
 
-* **initialize** - market owner setup market
-* **addPrediction** - owner can add prediction and update in case of issue
-* **changePredictionStatus** - [emergency function] owner can pause prediction when something wrong happened
-* **resolve** - prediction resolving function will be called after oracle knows prediction winning outcome id.
-* **payout** - function dedicated for winning payouts to take theyr rewards
-* **refundUser** - [emergency function] - owner can refund forecast to owner in case of issue.
-* **refund** - if prediction was canseled users using this function will get refund.
-* **receiveApproval** - AIX token will call this function to setup user forecast
+* **initialize** - market owner setup market.  
+* **addPrediction** - owner can add prediction and update in case of issue.  
+* **changePredictionStatus** - [emergency function] owner can pause prediction when something wrong happened.  
+* **resolve** - prediction resolving function will be called after oracle knows prediction winning outcome id.  
+* **payout** - function dedicated for winning payouts to take theyr rewards.  
+* **refundUser** - [emergency function] - owner can refund forecast to owner in case of issue.  
+* **refund** - if prediction was canseled users using this function will get refund.  
+* **receiveApproval** - AIX token will call this function to setup user forecast.  
+* **transferToPool** - After the product end return leftover AIX tokens to the pool.  
 
-View functions are used, because of current solidity limitations
+View functions are used, because of current solidity limitations:  
 
 * **getForecast** - ability to read forecast details
 * **getOutcomeTokens** -  ability to know each outcome collected money
 
-Safety functions
+Safety functions:  
 
 * **withdrawETH** - withdraw all ethers in case something wrong will be found
 * **withdrawTokens** - withdraw all tokens in case something wrong will be found

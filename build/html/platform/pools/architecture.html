@@ -1,0 +1,387 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Pools structure &mdash; Aigang 2018-11-06 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Aigang 2018-11-06 documentation" href="../../index.html"/>
+        <link rel="up" title="Pools" href="pools.html"/>
+        <link rel="next" title="Links" href="links.html"/>
+        <link rel="prev" title="Pools" href="pools.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Aigang
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2018-11-06
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">What is Aigang?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data.html">Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../predictions/predictions.html">Predictions Market</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="pools.html">Pools</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="pools.html#domain-language">Domain language</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pools.html#successful-contribution-flow">Successful contribution flow</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="pools.html#more-details">More details</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Pools structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#blockchain-part">Blockchain Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#platform-part">Platform Part</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="links.html">Links</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../insurance/insurance.html">Insurance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Documenation examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Aigang</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="pools.html">Pools</a> &raquo;</li>
+        
+      <li>Pools structure</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/platform/pools/architecture.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pools-structure">
+<h1>Pools structure<a class="headerlink" href="#pools-structure" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="blockchain-part">
+<h2>Blockchain Part<a class="headerlink" href="#blockchain-part" title="Permalink to this headline">¶</a></h2>
+<p>Full view:</p>
+<img alt="../../_images/poolsContracts.png" src="../../_images/poolsContracts.png" />
+<div class="section" id="pools-contract">
+<h3>Pools Contract<a class="headerlink" href="#pools-contract" title="Permalink to this headline">¶</a></h3>
+<p>The main contract will be <strong>Pools</strong> contract which holds:</p>
+<ul class="simple">
+<li>AIX Balance of all pools</li>
+<li>All actions Events</li>
+<li>Available pools list</li>
+<li>Contributors contribution details</li>
+</ul>
+<p><strong>Pool</strong></p>
+<p>This entity holds all contributions and address to PrizeCalculator. Full Entity structure:</p>
+<ul class="simple">
+<li>id - 32 symbols hash</li>
+<li>contributionStartUtc - (UNIX timestamp) Start date when the pool starts to accept contributions.</li>
+<li>contributionEndUtc - (UNIX timestamp) End date until which the pool accept contributions.</li>
+<li>destination - address of the product to which this pool is dedicated.</li>
+<li>status -<ul>
+<li>NotSet (0)</li>
+<li>Active (1) - the pool is ready for contributions. Initial status.</li>
+<li>Distributing (2) - insurance product is ended and rewards are ready.</li>
+<li>Funded (3) - pool contributions are ended and funds are sent to the insurance product.</li>
+<li>Paused (4) - the pool is paused by administrators.</li>
+<li>Canceled (5) - some issue happened and refunds for this pool contributors will happen.</li>
+</ul>
+</li>
+<li>amountLimit - limit how much tokens pool will collect</li>
+<li>amountCollected - a number of tokens were collected.</li>
+<li>amountDistributing - a number of tokens will be distributed as a reward.</li>
+<li>paidout - a number of tokens were already paid out.</li>
+<li>prizeCalculator - address of reward formula calculator.</li>
+<li>contributions - an array of contributions:<ul>
+<li>id - 32 symbols hash</li>
+<li>owner - contribution owner wallet address</li>
+<li>amount - contribution size in AIX tokens</li>
+<li>paidout - if the pool is canceled or pool distributing - an amount which was transferred for user</li>
+</ul>
+</li>
+</ul>
+<p><strong>Pools functions</strong></p>
+<ul class="simple">
+<li><strong>initialize</strong> - pools owner setup contract</li>
+<li><strong>addPool</strong> - owner can add pool and update in case of issue</li>
+<li><strong>setPoolStatus</strong> - owner can change pool status</li>
+<li><strong>setPoolAmountDistributing</strong> - owner set pool for distributing.</li>
+<li><strong>receiveApproval</strong> - AIX token will call this function to setup contribution</li>
+<li><strong>transferToDestination</strong> - transfer pool AIX tokens amount to destination.</li>
+<li><strong>payout</strong> - function to take contribution rewards</li>
+<li><strong>refund</strong> - if pool was canseled users using this function will get refund.</li>
+</ul>
+<p>View functions are used, because of current solidity limitations</p>
+<ul class="simple">
+<li><strong>getContribution</strong> - ability to read contribution details</li>
+</ul>
+<p>Safety functions</p>
+<ul class="simple">
+<li><strong>withdrawETH</strong> - withdraw all ethers in case something wrong will be found</li>
+<li><strong>withdrawTokens</strong> - withdraw all tokens in case something wrong will be found</li>
+<li><strong>pause</strong> - pause pools contract in case something wrong will be found</li>
+</ul>
+</div>
+<div class="section" id="prize-calculator-contract">
+<h3>Prize calculator contract<a class="headerlink" href="#prize-calculator-contract" title="Permalink to this headline">¶</a></h3>
+<p>This contract stores formula how much contributor can withdraw:</p>
+<p>Function to calculate reward amount:</p>
+<ul class="simple">
+<li><strong>calculatePrizeAmount</strong></li>
+</ul>
+<p>At first version we use simples reward distribution formula:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Your</span> <span class="n">contributed</span> <span class="n">tokens</span> <span class="p">(</span><span class="n">_contributionTokens</span><span class="p">)</span> <span class="o">*</span> <span class="n">_distributeTotalTokens</span> <span class="o">/</span> <span class="n">_collectedTotalTokens</span> <span class="o">=</span> <span class="n">reward</span>
+
+<span class="n">Example</span><span class="p">:</span>
+
+<span class="n">A</span> <span class="n">pool</span> <span class="n">collected</span> <span class="mi">2000</span> <span class="n">tokens</span> <span class="n">reserve</span><span class="p">:</span>
+
+<span class="n">User</span> <span class="n">A</span> <span class="n">placed</span> <span class="mi">1500</span> <span class="n">tokens</span>
+<span class="n">User</span> <span class="n">B</span> <span class="n">placed</span> <span class="mi">500</span> <span class="n">tokens</span>
+
+<span class="n">After</span> <span class="n">insurance</span> <span class="n">product</span> <span class="n">ended</span> <span class="ow">and</span> <span class="k">return</span> <span class="mi">2800</span> <span class="n">tokens</span> <span class="k">as</span> <span class="n">leftover</span> <span class="n">to</span> <span class="n">pool</span><span class="o">.</span>
+<span class="n">Users</span> <span class="n">can</span> <span class="n">now</span> <span class="n">withdraw</span> <span class="n">the</span> <span class="n">following</span> <span class="n">token</span> <span class="n">amount</span> <span class="kn">from</span> <span class="nn">their</span> <span class="n">contribution</span><span class="p">:</span>
+
+<span class="n">User</span> <span class="n">A</span> <span class="o">-&gt;</span> <span class="mi">1500</span> <span class="o">*</span> <span class="mi">2800</span> <span class="o">/</span> <span class="mi">2000</span> <span class="o">=</span> <span class="mi">2100</span> <span class="n">Tokens</span>
+<span class="n">User</span> <span class="n">B</span> <span class="o">-&gt;</span> <span class="mi">500</span> <span class="o">*</span> <span class="mi">2800</span> <span class="o">/</span> <span class="mi">2000</span> <span class="o">=</span> <span class="mi">700</span> <span class="n">Tokens</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="platform-part">
+<h2>Platform Part<a class="headerlink" href="#platform-part" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="platform-api">
+<h3>Platform API:<a class="headerlink" href="#platform-api" title="Permalink to this headline">¶</a></h3>
+<p>REST api service for other applications. Users can use to integrate with the platform.
+Addresses can be found at developers wiki page <a class="reference external" href="https://aigangnetwork.github.io/">https://aigangnetwork.github.io/</a></p>
+</div>
+<div class="section" id="platform-web">
+<h3>Platform WEB:<a class="headerlink" href="#platform-web" title="Permalink to this headline">¶</a></h3>
+<p>Aigang team maintainable web interface working on top of REST API.</p>
+</div>
+<div class="section" id="background-services">
+<h3>Background services:<a class="headerlink" href="#background-services" title="Permalink to this headline">¶</a></h3>
+<p><strong>Aigang.Transactions.Listener</strong> service - helps to maintain blockchain transactions statuses. Example: when contribution receives payment transaction this service activate contribution and update status to “Paid”.</p>
+</div>
+<div class="section" id="general-pool-statuses-in-platform">
+<h3>General pool statuses in platform:<a class="headerlink" href="#general-pool-statuses-in-platform" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Active (1)</strong> - pool is ready to accept contributions. Initial status.</li>
+<li><strong>Distributing (2)</strong> - the pool is distributing rewards.</li>
+<li><strong>Funded (3)</strong> - Contributing is ended and collected pool is sent to destination.</li>
+<li><strong>Paused (4)</strong> - contribution in this pool is paused and administrators are investigating what is happening</li>
+<li><strong>Canceled (5)</strong> - some issue happened and refunds for this pool contributors will happen.</li>
+<li><strong>Closed (7)</strong> - final state when all rewards are taken.</li>
+</ul>
+<img alt="../../_images/poolStatus.png" src="../../_images/poolStatus.png" />
+</div>
+<div class="section" id="general-contribution-statuses-in-platform">
+<h3>General contribution statuses in platform:<a class="headerlink" href="#general-contribution-statuses-in-platform" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>PendingPayment (1)</strong> - contribution payment was initialized.</li>
+<li><strong>Paid (2)</strong> - contribution was received.</li>
+<li><strong>Canceled (3)</strong> - contribution is canceled because paiment was not received in 24 hours.</li>
+<li><strong>AvailablePayout (4)</strong> - reward is available to you to take out.</li>
+<li><strong>AvailableRefund (7)</strong> - pool is canceled and you can refund your tokens.</li>
+<li><strong>RewardPaidout (6)</strong> - reward was successful and tokens was sent to a user.</li>
+<li><strong>PendingPayout (5)</strong> - payout transactions were submited and the platform is waiting until it will be commited.</li>
+<li><strong>RefundPaidout (8)</strong> - refund was successful and tokens was sent to a user.</li>
+</ul>
+<img alt="../../_images/contributionStatus.png" src="../../_images/contributionStatus.png" />
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="links.html" class="btn btn-neutral float-right" title="Links" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pools.html" class="btn btn-neutral" title="Pools" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Aigang.network.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'2018-11-06',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

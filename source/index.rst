@@ -10,7 +10,6 @@ Content
    platform/index.rst
    platform/data.rst
    platform/predictions/predictions.rst
-   platform/pools.rst
+   platform/pools/pools.rst
    platform/insurance/insurance.rst
-   platform/bugBounty.rst
    examples/index.rst

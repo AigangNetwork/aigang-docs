@@ -32,6 +32,7 @@ More details
 
    architecture
    batteryInsuranceProduct
+   testApp
    links
 
 

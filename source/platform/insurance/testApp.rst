@@ -1,6 +1,6 @@
-Bug bounty
-=================
-This section contains documentation how to set up environment for bug bounty testing.
+Test app install instructions
+==============================
+This section contains documentation how to set up environment for android app testing.
 
 .. attention::
    Aigang android insurance product only allows to use real android devices with SIM card(s).
@@ -18,7 +18,7 @@ Install test app for Android device
 
 - Switch your mobile browser mode to view desktop mode. It allows you to see Download button.
 
-.. image:: ../img/setUpAndroidApp/step1.png 
+.. image:: ../../img/setUpAndroidApp/step1.png 
    :width: 400px
    :align: center
 
@@ -26,11 +26,11 @@ Install test app for Android device
 
 - Click `Download` button and download APK.
 
-.. image:: ../img/setUpAndroidApp/step2.png 
+.. image:: ../../img/setUpAndroidApp/step2.png 
    :width: 400px
    :align: center
 
-.. image:: ../img/setUpAndroidApp/step3.png 
+.. image:: ../../img/setUpAndroidApp/step3.png 
    :width: 400px
    :align: center
 
@@ -38,7 +38,7 @@ Install test app for Android device
 
 - Install and open app.
 
-.. image:: ../img/setUpAndroidApp/step4.png 
+.. image:: ../../img/setUpAndroidApp/step4.png 
    :width: 400px
    :align: center
 
@@ -46,7 +46,7 @@ Install test app for Android device
 
 - Agree with permission request.
 
-.. image:: ../img/setUpAndroidApp/step5.png 
+.. image:: ../../img/setUpAndroidApp/step5.png 
    :width: 400px
    :align: center
 
@@ -54,7 +54,7 @@ Install test app for Android device
 
 - Grant telephony permission for aigang app. Application needs this permission to get SIM card related data.
 
-.. image:: ../img/setUpAndroidApp/step6.png 
+.. image:: ../../img/setUpAndroidApp/step6.png 
    :width: 400px
    :align: center
 
@@ -62,7 +62,7 @@ Install test app for Android device
 
 - Pair your device with test platform.
 
-.. image:: ../img/setUpAndroidApp/step7.png 
+.. image:: ../../img/setUpAndroidApp/step7.png 
    :width: 400px
    :align: center
 
@@ -70,18 +70,18 @@ Install test app for Android device
 
 - Congratulations, you successfully paired your device.
 
-.. image:: ../img/setUpAndroidApp/step8.png 
+.. image:: ../../img/setUpAndroidApp/step8.png 
    :width: 400px
    :align: center
 
 
 Android application Mock data
 -----------------------------------
-TODO: Add description about mock data functionality
+In case of testing you can mock real data of your device.
 
 White list
 -----------------------------------
-To get more functionality for easier testing whitelist your device ID: https://github.com/AigangNetwork/aigang-platform-web/issues/86 
+To get ability to insure more then one time whitelist your device ID: https://github.com/AigangNetwork/aigang-platform-web/issues/86 
 
 Create test account
 -----------------------------------

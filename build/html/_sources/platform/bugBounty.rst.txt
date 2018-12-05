@@ -75,6 +75,14 @@ Install test app for Android device
    :align: center
 
 
+Android application Mock data
+-----------------------------------
+TODO: Add description about mock data functionality
+
+White list
+-----------------------------------
+To get more functionality for easier testing whitelist your device ID: https://github.com/AigangNetwork/aigang-platform-web/issues/86 
+
 Create test account
 -----------------------------------
 - Open https://testplatform.aigang.network/register and sign up.

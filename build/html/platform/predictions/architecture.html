@@ -24,19 +24,28 @@
 
   
 
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Links" href="links.html" />
-    <link rel="prev" title="Predictions Market" href="predictions.html" /> 
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Aigang 2018-11-06 documentation" href="../../index.html"/>
+        <link rel="up" title="Predictions Market" href="predictions.html"/>
+        <link rel="next" title="Links" href="links.html"/>
+        <link rel="prev" title="Predictions Market" href="predictions.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
    
   <div class="wy-grid-for-nav">
@@ -99,7 +108,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../pools.html">Pools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pools/pools.html">Pools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../insurance/insurance.html">Insurance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../bugBounty.html">Bug bounty</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Documenation examples</a></li>
@@ -114,7 +123,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">Aigang</a>
@@ -122,10 +131,9 @@
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -219,21 +227,22 @@
 </ul>
 <p><strong>Market functions</strong></p>
 <ul class="simple">
-<li><strong>initialize</strong> - market owner setup market</li>
-<li><strong>addPrediction</strong> - owner can add prediction and update in case of issue</li>
-<li><strong>changePredictionStatus</strong> - [emergency function] owner can pause prediction when something wrong happened</li>
+<li><strong>initialize</strong> - market owner setup market.</li>
+<li><strong>addPrediction</strong> - owner can add prediction and update in case of issue.</li>
+<li><strong>changePredictionStatus</strong> - [emergency function] owner can pause prediction when something wrong happened.</li>
 <li><strong>resolve</strong> - prediction resolving function will be called after oracle knows prediction winning outcome id.</li>
-<li><strong>payout</strong> - function dedicated for winning payouts to take theyr rewards</li>
+<li><strong>payout</strong> - function dedicated for winning payouts to take theyr rewards.</li>
 <li><strong>refundUser</strong> - [emergency function] - owner can refund forecast to owner in case of issue.</li>
 <li><strong>refund</strong> - if prediction was canseled users using this function will get refund.</li>
-<li><strong>receiveApproval</strong> - AIX token will call this function to setup user forecast</li>
+<li><strong>receiveApproval</strong> - AIX token will call this function to setup user forecast.</li>
+<li><strong>transferToPool</strong> - After the product end return leftover AIX tokens to the pool.</li>
 </ul>
-<p>View functions are used, because of current solidity limitations</p>
+<p>View functions are used, because of current solidity limitations:</p>
 <ul class="simple">
 <li><strong>getForecast</strong> - ability to read forecast details</li>
 <li><strong>getOutcomeTokens</strong> -  ability to know each outcome collected money</li>
 </ul>
-<p>Safety functions</p>
+<p>Safety functions:</p>
 <ul class="simple">
 <li><strong>withdrawETH</strong> - withdraw all ethers in case something wrong will be found</li>
 <li><strong>withdrawTokens</strong> - withdraw all tokens in case something wrong will be found</li>
@@ -248,7 +257,7 @@
 <li><strong>calculatePrizeAmount</strong></li>
 </ul>
 <p>At first version we use simples prize distribution formula:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Your</span> <span class="n">contributed</span> <span class="n">tokens</span> <span class="p">(</span><span class="n">_forecastTokens</span><span class="p">)</span> <span class="o">*</span> <span class="n">_predictionTotalTokens</span> <span class="o">/</span> <span class="n">_winOutputTotalTokens</span> <span class="o">=</span> <span class="n">prize</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Your</span> <span class="n">contributed</span> <span class="n">tokens</span> <span class="p">(</span><span class="n">_forecastTokens</span><span class="p">)</span> <span class="o">*</span> <span class="n">_predictionTotalTokens</span> <span class="o">/</span> <span class="n">_winOutputTotalTokens</span> <span class="o">=</span> <span class="n">prize</span>
 
 <span class="n">Example</span><span class="p">:</span>
 
@@ -324,7 +333,9 @@ functionality is a key feature. Having own oracle service will be much flexible 
 
 
            </div>
-           
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
@@ -342,11 +353,11 @@ functionality is a key feature. Having own oracle service will be much flexible 
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Aigang.network
+        &copy; Copyright 2018, Aigang.network.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -361,24 +372,35 @@ functionality is a key feature. Having own oracle service will be much flexible 
 
   
 
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'2018-11-06',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
 
   
 
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
 
+  
+  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
+          SphinxRtdTheme.StickyNav.enable();
       });
-  </script> 
+  </script>
+   
 
 </body>
 </html>
