@@ -117,7 +117,7 @@ General pool statuses in platform:
 """"""""""""""""""""""""""""""""""""""""""""""""""
 * **Active (1)** - pool is ready to accept contributions. Initial status.
 * **Distributing (2)** - the pool is distributing rewards.
-* **Funded (3)** - Contributing is ended and collected pool is sent to destination.
+* **Funding (3)** - Contributing is ended and collected pool will be sent to destination.
 * **Paused (4)** - contribution in this pool is paused and administrators are investigating what is happening
 * **Canceled (5)** - some issue happened and refunds for this pool contributors will happen. 
 *  **Closed (7)** - final state when all rewards are taken.
