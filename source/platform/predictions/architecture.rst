@@ -154,4 +154,4 @@ General forecast statuses in platform:
 * **PendingPayout (9)** - payout transactions was submited and platform is waiting until it will be commited.  
 * **RefundPaidout (10)** - refund was successful and tokens was sent to user. 
 
-.. image:: ../../img/predictions/forecastStatus.png
+.. image:: ../../img/predictions/forecastStatus1.png
