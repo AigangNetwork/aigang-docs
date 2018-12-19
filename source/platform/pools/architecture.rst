@@ -111,7 +111,10 @@ Aigang team maintainable web interface working on top of REST API.
 
 Background services:
 """"""""""""""""""""""""
-**Aigang.Transactions.Listener** service - helps to maintain blockchain transactions statuses. Example: when contribution receives payment transaction this service activate contribution and update status to "Paid".
+**Aigang.Transactions.Listener** service - helps to maintain blockchain transactions statuses. 
+Example: when contribution receives payment transaction this service activate contribution and update status to "Paid".  
+**Aigang.Pools.Listener** service - helps to maintain pools and contributions. 
+Example: when contribution doesn't have payment transaction after 1-hour, status will be changed to "Canceled".
 
 General pool statuses in platform:
 """"""""""""""""""""""""""""""""""""""""""""""""""
